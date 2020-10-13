@@ -1,0 +1,6 @@
+<h3>Posts List</h3>
+<div *ngFor="let postInList of posts">
+  <app-post [post]="postInList" ></app-post>
+</div>
+<img [src]="imgUrl" alt="image url" />
+<button [disabled]="!isEnabled" type="submit" style="background-color: orange;">Enabled or Not</button>
